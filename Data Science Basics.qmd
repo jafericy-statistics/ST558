@@ -1,0 +1,48 @@
+---
+title: "Homework 1: Data Science Basics"
+format: html
+editor: visual
+---
+
+## What is Data Science?
+
+Data science (DS) encompasses transforming data (raw, curated, or unstructured) into actionable insights. Data science utilizes statistics to inform/create analytics, inference, or intelligence for business outcomes, incorporating engineering, programming, and statistical methods to understand and recognize patterns.
+
+There are also some very key differences/similarities between data science and statistics. These include:
+
+-   **Data Dependency:** At times, data science may require adjustments or curation of data, while some statistical analysis could simulate data.
+
+-   **Reliance on Probability Theory:** Both rely heavily on probability theory to solve complex problems. There are variations to this usage, but probability theory remains a large pillar of both.
+
+-   **Data Cleanliness:** There are some key differences between data quality and cleaning in DS and statistics. A statistical study may require cleaner data, given that some DS roles require data engineering and database work.
+
+-   **Differences in Programming Languages:** Typically, there are expectations for data scientists to have control over more programming languages than statisticians. Again, there are many instances where statisticians would code in many of the languages that a data scientist would. However, in DS work, there may be more front-end work required that enable the insights created into tools for leadership.
+
+After working 10 years in various roles, I sit between both sides of data science and statistics. I understand the raw data from a data science/engineering perspective. However, there are also key aspects such as analytics, intelligence, and more applied decision science problems that show my exposure to Data Science. In addition, I use statistical theories often to bridge the gap between models and risk management for more statistical usage in my work.
+
+## Coding Examples
+
+Now, let us look at some coding examples. Here we import a pre-existing dataset.
+
+```{r}
+# Import iris data
+y <- density(iris$Petal.Width)
+
+
+```
+
+Now that the dataset is imported, here are three code examples on how to identify the class, type and structure of the dataset.
+
+```{r}
+class(y)
+typeof(y)
+str(y)
+```
+
+Finally, we want to print this density in a graph.
+
+```{r}
+#| echo: false
+plot(y, main = "petal width density")
+
+```
